@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
- * Script to print using putc
- *
+/*main -Entry point
+ * 
+ *Return: Always 0 (success)
  */
 
 int main(void)
