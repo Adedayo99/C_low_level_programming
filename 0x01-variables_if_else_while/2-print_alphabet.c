@@ -9,7 +9,7 @@ int main(void)
 {
 /* printing lower case alphabet*/
 	int ch;
-	ch = 97;
+	ch = 97;				      
 						      
 	while (ch <= 'z')
 {
