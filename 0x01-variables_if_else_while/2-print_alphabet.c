@@ -10,12 +10,12 @@ int main(void)
 /* printing lower case alphabet*/
 	int ch;
 	ch = 97;
-	
+
 	while (ch <= 'z')
 {
 	putchar(ch);
 	ch++;
-	putchar('\n');
+
 }
 
 
