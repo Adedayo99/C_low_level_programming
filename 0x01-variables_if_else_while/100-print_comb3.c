@@ -22,8 +22,8 @@ int main(void)
 	;
 	else
 {
-	putchar('i');
-	putchar('j');
+	putchar(i);
+	putchar(j);
 	putchar(',');
 	putchar(' ');
 }
