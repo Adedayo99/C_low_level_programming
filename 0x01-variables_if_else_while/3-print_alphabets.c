@@ -28,6 +28,6 @@ int main(void)
 	ch1++;
 }
 
-
+	putchar('\n');
 	return (0);
 }
