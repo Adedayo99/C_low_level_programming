@@ -11,13 +11,21 @@ int main(void)
 
 {
 	int ch;
+	int ch1;
 
-	ch = 67;
+	ch = 97;
+	ch1 = 65;
 
-	while (ch < 'Z')
+	while (ch < 'z')
 {
 	putchar(ch);
 	ch++;
+}
+
+	while (ch1 < 'Z')
+{
+	putchar(ch1);
+	ch1++;
 }
 
 
