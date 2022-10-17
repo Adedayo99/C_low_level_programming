@@ -16,13 +16,13 @@ int main(void)
 	ch = 97;
 	ch1 = 65;
 
-	while (ch < 'z')
+	while (ch <= 'z')
 {
 	putchar(ch);
 	ch++;
 }
 
-	while (ch1 < 'Z')
+	while (ch1 <= 'Z')
 {
 	putchar(ch1);
 	ch1++;
