@@ -15,15 +15,16 @@ int main(void)
 
 	while (ch <= 'z')
 {
+
 	if (ch == 'e' || ch == 'q')
 {
-	putchar();
+	;
 }
-	else
-{
+	
+
 	putchar(ch);
 	ch++;
-}
+
 }
 	return (0);
 }
