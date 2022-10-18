@@ -4,7 +4,7 @@
 * Return: Always 0 (success)
 */
 
-include "main.h"
+#include "main.h"
 
 int main(void)
 {
