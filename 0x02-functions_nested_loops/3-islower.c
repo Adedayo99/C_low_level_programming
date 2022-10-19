@@ -6,7 +6,7 @@
 
 #include "main.h"
 
-int is_lower(int c)
+int _islower(int c)
 {
 	int i;
 	int flag;
