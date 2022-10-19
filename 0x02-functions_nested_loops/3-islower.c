@@ -1,5 +1,5 @@
 /**
-* is_lower - checks for lowercase characters
+* _islower - checks for lowercase characters from c
 *
 * Return: Always 1 (success)
 */
