@@ -1,5 +1,5 @@
 /**
-* _isalpha.c - checks for alphabetic character
+* _isalpha  - checks for alphabetic character
 *@c: The character to examine
 *
 * Return: Always 1 (success)
@@ -36,4 +36,4 @@ int _isalpha(int c)
 	else
 	return (0);
 }
-		
+
