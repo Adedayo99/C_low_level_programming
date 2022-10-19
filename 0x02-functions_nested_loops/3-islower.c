@@ -11,23 +11,16 @@ int _islower(int c)
 	int i;
 	int flag;
 
-	flag = 0;
 	i = 'a';
 	while (i <= 'z')
 {
-	while (i == c)
-{
+	i++;
+	if (i == c)
 	flag = 1;
-	break;
 }
-
-
-}
-
 	if (flag == 1)
 	return (1);
 
 	else
 	return (0);
-
 }
