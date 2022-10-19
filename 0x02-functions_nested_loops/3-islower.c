@@ -18,16 +18,16 @@ int is_lower(int c)
 	while (i == c)
 {
 	flag = 1;
-	break
+	break;
 }
 
 
 }
 
 	if (flag == 1)
-{	return (1);
+	return (1);
 
 	else
 	return (0);
-}
+
 }
