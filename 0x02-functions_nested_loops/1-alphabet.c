@@ -1,5 +1,8 @@
 /* function to print alphabet*/
 
+#include "main.h"
+
+
 void print_alphabet(void)
 {
 	int i;
