@@ -5,7 +5,7 @@
 *Return: Always 0 (success)
 */
 
-include "main.h"
+#include "main.h"
 
 int print_sign(int n)
 {
