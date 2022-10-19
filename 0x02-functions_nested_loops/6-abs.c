@@ -1,18 +1,19 @@
 /**
 * _abs - Obtains abs val of input num
-*@int: type of expected input
+*@n: type of expected input
 *
 * Return: Always 0 (success)
 */
 
 #include "main.h"
 
-int _abs(int)
+int _abs(int n)
 {
 
-	if (int > 0)
-		int = int;
-
+	if (n >= 0)
+		n = n;
+		return (n);
 	else
-		int = -int;
+		n = -n;
+		return (-n);
 }
