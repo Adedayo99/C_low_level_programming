@@ -1,7 +1,7 @@
 /**
 * mul - multiplies two ints
-*@a,b: inputs to multiply
-*
+*@a: input
+*@b: input
 *Return: Always 0 (success)
 */
 
@@ -11,6 +11,6 @@ int mul(int a, int b)
 {
 	int prod;
 
-	prod = a*b;
+	prod = a * b;
 	return (prod);
 }
