@@ -20,7 +20,7 @@ int _isdigit(int c)
 	if (i == c)
 	flag = 1;
 }
-	if (flag = 1)
+	if (flag == 1)
 	return (1);
 
 	else
