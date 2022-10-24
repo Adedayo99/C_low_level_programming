@@ -13,8 +13,6 @@ void print_array(int *a, int n)
 {
 	int i;
 
-	flag = 0;
-
 	for (i = 0; a[i] != '\0' && i <= n - 2; i++)
 	{
 
