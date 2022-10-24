@@ -1,7 +1,7 @@
 /**
 * reset_to_98 - changes pointer var value
-*@*n: pointer argument to function
-* 
+*@n: pointer argument to function
+*
 * Return: Returns var with new value
 */
 
