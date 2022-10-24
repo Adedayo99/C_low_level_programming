@@ -11,7 +11,6 @@ void rev_string(char *s)
 {
 	int i;
 	int count;
-	char mychar[];
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -20,9 +19,6 @@ void rev_string(char *s)
 
 	for (i = --count; i >= 0; i--)
 	{
-	mychar[i] = s[i];
-	}
-
-	s = mychar[];
+	
 
 }
