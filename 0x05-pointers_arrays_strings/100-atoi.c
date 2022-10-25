@@ -16,4 +16,5 @@ int _atoi(char *s)
 	{
 	printf("%c", s[i]);
 	}
+	return (0);
 }	
