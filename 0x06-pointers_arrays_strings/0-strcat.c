@@ -11,19 +11,25 @@
 char *_strcat(char *dest, char *src);
 {
 	int i = 0;
-	int count = 0;
+	int count1 = 0;
+	int count2 = 0;
 
 	while (*dest != '\0')
 	{
-	count++;
+	count1++;
 	}
 
-	for (i = 0; *src != '\0'; i++, count++)
+	while (*src != '\0')
 	{
-	*(dest + count) = *(src + i);
+	count2++;
 	}
 
-	*dest = '\0';
+
+	for (i = 0; i<= count2; i++, count1++)
+	{
+	*(dest + count1) = *(src + i);
+	}
+
 	return (dest);
 	_putchar('\n');
 }
