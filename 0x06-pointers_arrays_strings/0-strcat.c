@@ -13,12 +13,10 @@ char *_strcat(char *dest, char *src);
 	int i = 0;
 	int count = 0;
 
-	while (*dest != '\0')
+	while (*dest <= '\0')
 	{
 	count++;
 	}
-
-	count = count - 1;
 
 	for (i = 0; *src != '\0'; i++, count++)
 	{
