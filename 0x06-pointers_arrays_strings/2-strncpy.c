@@ -1,5 +1,5 @@
-/*
-*_strncpy - concatenates strings
+/**
+* _strncpy - concatenates strings
 *@dest: destination var
 *@src: source var
 *@n: number of bytes
@@ -14,9 +14,11 @@ char *_strncpy(char *dest, char *src, int n)
 	int i = 0;
 	char return_ptr = dest;
 
-	for (; i <= n; i++)
+	while (*src != '\0')
 	{
-	*(dest + i) = *(src + i);
+	*dest = *src;
+	dest++;
+	src++;
 	}
 
 	*dest = '\0';
