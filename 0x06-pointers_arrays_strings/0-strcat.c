@@ -17,19 +17,21 @@ char *_strcat(char *dest, char *src);
 	while (*dest != '\0')
 	{
 	count1++;
+	dest++;
 	}
 
 	while (*src != '\0')
 	{
 	count2++;
+	src++;
 	}
 
 
-	for (i = 0; i<= count2; i++, count1++)
+	for (; i<= count2; i++, count1++)
 	{
 	*(dest + count1) = *(src + i);
 	}
-
+	*dest = '\0';
 	return (dest);
 	_putchar('\n');
 }
