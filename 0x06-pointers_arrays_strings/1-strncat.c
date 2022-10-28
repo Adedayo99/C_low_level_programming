@@ -10,7 +10,7 @@
 
 #include "main.h"
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int count1 = 0;
