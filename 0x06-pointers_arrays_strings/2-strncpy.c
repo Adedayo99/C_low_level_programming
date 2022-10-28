@@ -12,6 +12,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
+	char return_ptr = dest;
 
 	for (; i <= n; i++)
 	{
@@ -19,5 +20,5 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 	*dest = '\0';
-	return (dest);
+	return (return_dest);
 }
