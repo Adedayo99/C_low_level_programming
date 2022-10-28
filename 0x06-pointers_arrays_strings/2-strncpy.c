@@ -12,7 +12,7 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
-	char return_ptr = dest;
+	char *return_ptr = dest;
 
 	while (*src != '\0')
 	{
