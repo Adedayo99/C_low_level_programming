@@ -9,14 +9,11 @@
 
 int _isupper(int c)
 {
-	int i;
 	int flag;
 
-	i = 'A';
-	while (i <= 'Z')
+
+	if ('A' <= c && c <= 'Z')
 {
-	i++;
-	if (i == c)
 	flag = 1;
 }
 
