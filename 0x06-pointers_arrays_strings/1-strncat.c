@@ -1,6 +1,6 @@
 
 /**
-* _strcat - concatenates strings
+* _strncat - concatenates strings
 *@dest: destination var
 *@src: source var
 *@n: number of bytes
@@ -28,7 +28,7 @@ char *_strncat(char *dest, char *src, int n)
 	src++;
 	}
 
-	for (; i<= n; i++, count1++)
+	for (; i <= n; i++, count1++)
 	{
 	*(dest + count1) = *(src + i);
 	}
