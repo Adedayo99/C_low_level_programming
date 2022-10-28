@@ -9,15 +9,11 @@
 
 int _isdigit(int c)
 {
-	int i;
-	int flag;
+	int flag = 0;
 
-	i = '0';
 
-	while (i <= '9')
+	if ('0' <= c && c <= '9')
 {
-	i++;
-	if (i == c)
 	flag = 1;
 }
 	if (flag == 1)
