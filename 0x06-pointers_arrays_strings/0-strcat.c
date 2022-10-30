@@ -14,24 +14,28 @@ char *_strcat(char *dest, char *src)
 	int count1 = 0;
 	int count2 = 0;
 
-	while (*dest != '\0')
+	char* my_dest = dest;
+	char* my_src = src;
+
+
+	while (*my_dest != '\0')
 	{
 	count1++;
-	dest++;
+	my_dest++;
 	}
 
-	while (*src != '\0')
+	while (*my_src != '\0')
 	{
 	count2++;
-	src++;
+	my_src++;
 	}
 
 
 	for (; i <= count2; i++, count1++)
 	{
-	*(dest + count1) = *(src + i);
+	*(my_dest + count1) = *(my_src + i);
 	}
-	*dest = '\0';
-	return (dest);
+	*my_dest = '\0';
+	return (my_dest);
 	_putchar('\n');
 }
