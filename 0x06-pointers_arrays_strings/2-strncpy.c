@@ -16,15 +16,23 @@ char *_strncpy(char *dest, char *src, int n)
 	char *ptr1 = src;
 	char *ptr2 = dest;
 
-	if (((int) (sizeof(src)) > 0))
-{
-	for (i = 0; i < n; i++)
+	if (((int) (sizeof(src)) > 0) && n < (int) (sizeof(src)))
 	{
+		for (i = 0; i < n; i++)
+		{
 		ptr2[i] = ptr1[i];
+		}
 	}
-	ptr2[i] = '\0';
 
-}
+	if (n >= (int) (sizeof(src)))
+	{
+		for (i = 0; i < n; i++)
+		{
+		ptr2[i] = ptr1[i];
+		}
+		ptr2[i] = '\0';
+	}
+
 	return (ptr2);
 	_putchar('\n');
 }
