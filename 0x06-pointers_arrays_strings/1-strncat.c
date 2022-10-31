@@ -31,7 +31,7 @@ char *_strncat(char *dest, char *src, int n)
 
 	else
 	{
-		for (j = 0; j <= n; j++)
+		for (j = 0; j < n; j++)
 		my_dest[i + j] = my_src[j];
 	}
 
