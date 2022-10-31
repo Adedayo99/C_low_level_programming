@@ -13,7 +13,7 @@ void reverse_array(int *a, int n)
 	int *ptr = a;
 	int i;
 	int temp;
-	int j = ((int) sizeof(a) / (int) sizeof(ptr[0])) - 1;
+	int j = ((int) sizeof(a) / (int) sizeof(int));
 
 
 
@@ -21,8 +21,8 @@ void reverse_array(int *a, int n)
 	{
 
 		temp = ptr[i];
-		ptr[i] = ptr[j - i];
-		ptr[j - i] = temp;
+		ptr[i] = ptr[j - i - 1];
+		ptr[j - i - 1] = temp;
 	}
 
 }
