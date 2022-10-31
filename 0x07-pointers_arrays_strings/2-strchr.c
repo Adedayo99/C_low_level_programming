@@ -1,5 +1,5 @@
 /**
-* _strchr - searches for char 
+* _strchr - searches for char
 *@s: pointer to recieve string
 *@c: char being sought for
 *
@@ -17,10 +17,10 @@ char *_strchr(char *s, char c)
 	for (i = 0; ptr[i] != '\0'; i++)
 	{
 		if (ptr[i] == c)
-		ptr = ptr + i;
+		ptr = ptr + i - 1;
 	}
-	
-	if (ptr != ptr + i)
+
+	if (ptr != ptr + i - 1)
 	ptr = NULL;
 
 	return (ptr);
