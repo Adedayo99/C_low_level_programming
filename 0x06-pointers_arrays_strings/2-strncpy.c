@@ -25,12 +25,12 @@ char *_strncpy(char *dest, char *src, int n)
 
 	if (n >= (int) (sizeof(src)))
 	{
-		for (i = 0; i <= (int) (sizeof(src)); i++)
+		for (i = 0; i <= (int) sizeof(src); i++)
 		{
 		ptr2[i] = ptr1[i];
 		}
-
-		for (i = i + 1; i <= n; i++)
+		i++
+		for (; i <= n; i++)
 		{
 		ptr2[i] = '\0';
 		}
