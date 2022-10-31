@@ -12,7 +12,6 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
-	int j;
 	char *ptr1 = src;
 	char *ptr2 = dest;
 
