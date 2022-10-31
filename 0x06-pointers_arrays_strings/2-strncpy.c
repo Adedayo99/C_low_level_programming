@@ -12,11 +12,11 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
-
+	int j;
 	char *ptr1 = src;
 	char *ptr2 = dest;
 
-	if (((int) (sizeof(src)) > 0) && n < (int) (sizeof(src)))
+	if ( n < (int) (sizeof(src)))
 	{
 		for (i = 0; i < n; i++)
 		{
@@ -26,11 +26,18 @@ char *_strncpy(char *dest, char *src, int n)
 
 	if (n >= (int) (sizeof(src)))
 	{
-		for (i = 0; i < n; i++)
+		for (i = 0; i < (int) (sizeof(src)); i++)
 		{
 		ptr2[i] = ptr1[i];
 		}
+
+		for (i = i + 1; (int) sizeof(src) < i <= n; i++)
+		{
 		ptr2[i] = '\0';
+		}
+
+
+
 	}
 
 	return (ptr2);
