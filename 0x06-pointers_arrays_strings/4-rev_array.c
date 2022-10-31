@@ -21,9 +21,8 @@ void reverse_array(int *a, int n)
 	{
 
 		temp = ptr[i];
-		ptr[i] = ptr[j];
-		ptr[j] = temp;
-		j--;
+		ptr[i] = ptr[j - i];
+		ptr[j - i] = temp;
 	}
 
 }
