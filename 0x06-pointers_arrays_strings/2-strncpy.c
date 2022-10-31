@@ -29,7 +29,7 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 		ptr2[i] = ptr1[i];
 		}
-		i++
+		i++;
 		for (; i <= n; i++)
 		{
 		ptr2[i] = '\0';
