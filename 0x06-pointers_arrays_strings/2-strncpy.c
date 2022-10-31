@@ -30,7 +30,7 @@ char *_strncpy(char *dest, char *src, int n)
 		ptr2[i] = ptr1[i];
 		}
 
-		for (i = i + 1; (int) sizeof(src) < i <= n; i++)
+		for (i = i + 1; (int) sizeof(src) < i < n; i++)
 		{
 		ptr2[i] = '\0';
 		}
