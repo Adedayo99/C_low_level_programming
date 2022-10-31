@@ -7,7 +7,7 @@
 */
 
 #include "main.h"
-
+#include <stddef.h>
 char *_strchr(char *s, char c)
 {
 	int i;
@@ -17,14 +17,13 @@ char *_strchr(char *s, char c)
 	for (i = 0; ptr[i] != '\0'; i++)
 	{
 		if (ptr[i] == c)
-		ptr = &ptr[i];
-		break;
-
-		else
-		ptr = NULL;
+		ptr = ptr + i;
 	}
+	
+	if (ptr != ptr + i)
+	ptr = NULL;
+
 	return (ptr);
 	_putchar('\n');
-
 
 }
