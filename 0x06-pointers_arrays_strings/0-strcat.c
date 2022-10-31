@@ -10,9 +10,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int count1 = 0;
-	int count2 = 0;
+
 
 	char *my_dest = dest;
 	char *my_src = src;
