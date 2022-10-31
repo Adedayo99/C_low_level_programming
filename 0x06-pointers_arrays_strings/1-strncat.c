@@ -17,8 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 	char *my_dest = dest;
 	char *my_src = src;
 
-	if (*my_dest || *my_src == Null)
-	return (Null);
+	if (my_dest[0] == NULL) return (NULL);
 
 	for (i = 0; my_dest[i] != '\0'; i++)
 	;
