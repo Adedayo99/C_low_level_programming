@@ -11,16 +11,20 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
+	int i;
 
-	char *return_ptr = dest;
+	char *ptr1 = src;
+	char *ptr2 = dest;
 
-	while (*src != '\0')
+	if (((int) (sizeof(src)) > 0))
+{
+	for (i = 0; i < n; i++)
 	{
-	*dest = *src;
-	dest++;
-	src++;
+		ptr2[i] = ptr1[i];
 	}
+	ptr2[i] = '\0';
 
-	*dest = '\0';
-	return (return_ptr);
+}
+	return (ptr2);
+	_putchar('\n');
 }
