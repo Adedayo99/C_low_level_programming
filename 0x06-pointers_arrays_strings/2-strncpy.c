@@ -15,7 +15,7 @@ char *_strncpy(char *dest, char *src, int n)
 	char *ptr1 = src;
 	char *ptr2 = dest;
 
-	if ( n < (int) (sizeof(src)))
+	if (n < (int) (sizeof(src)))
 	{
 		for (i = 0; i < n; i++)
 		{
