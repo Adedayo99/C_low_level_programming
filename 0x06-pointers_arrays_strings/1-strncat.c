@@ -17,11 +17,12 @@ char *_strncat(char *dest, char *src, int n)
 	char *my_dest = dest;
 	char *my_src = src;
 
-	if (my_dest[0] == NULL) return (NULL);
 
 	for (i = 0; my_dest[i] != '\0'; i++)
 	;
 
+	if (i != 0)
+{
 	if (((int) sizeof(my_src)) < n)
 	{
 		for (j = 0; j <= n; j++)
@@ -38,6 +39,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	return (my_dest);
+}
 	_putchar('\n');
 }
 
