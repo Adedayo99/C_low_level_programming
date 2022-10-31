@@ -38,8 +38,8 @@ char *_strncat(char *dest, char *src, int n)
 		my_dest[i + j] = my_src[j];
 	}
 
-	return (my_dest);
 }
+	return (my_dest);
 	_putchar('\n');
 }
 
