@@ -17,12 +17,12 @@ char *_strstr(char *haystack, char *needle)
 	char *temp_ptr;
 	int flag = 0;
 
-	for (i = 0; ptr[i] != '\0'; i++)
+	for (i = 0; check[i] != '\0'; i++)
 	{
-		for (j = 0; check[j] != '\0'; j++)
+		for (j = 0; ptr[j] != '\0'; j++)
 		{
-		if (ptr[i] == check[j])
-		temp_ptr = &ptr[i];
+		if (check[i] == ptr[j])
+		temp_ptr = &ptr[j];
 		flag = 1;
 		}
 
