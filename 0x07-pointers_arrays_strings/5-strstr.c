@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 
 	for (i = 0; check[i] != '\0'; i++)
 	{
-		for (j = 0; ptr[j] != '\0';)
+		for (j = 0; ptr[j] != '\0'; j++)
 		{
 		if (check[i] == ptr[j])
 		temp_ptr = &ptr[j];
