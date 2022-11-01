@@ -11,12 +11,22 @@
 char *_strchr(char *s, char c)
 {
 	int i;
+	int j;
 	char *ptr = s;
 	int flag = 0;
 	char *temp_ptr;
 
 	for (i = 0; ptr[i] != '\0'; i++)
 	{
+		for (j = 0; ptr[j] != '\0'; j++)
+		;
+
+		if (c == '\0')
+		{
+		temp_ptr = ptr[j];
+		}
+
+
 		if (ptr[i] == c)
 		{
 		temp_ptr = &ptr[i];
