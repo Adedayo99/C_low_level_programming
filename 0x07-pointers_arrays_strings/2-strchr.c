@@ -22,9 +22,12 @@ char *_strchr(char *s, char c)
 		temp_ptr = &ptr[i];
 		flag = 1;
 		}
+
+		if (flag == 1)
+		break;
 	}
 
-	if (flag != 1)
+	if (flag == 0)
 	temp_ptr = NULL;
 
 	return (temp_ptr);
