@@ -23,7 +23,7 @@ char *_strchr(char *s, char c)
 
 		if (c == '\0')
 		{
-		temp_ptr = ptr[j];
+		temp_ptr = &ptr[j];
 		}
 
 
