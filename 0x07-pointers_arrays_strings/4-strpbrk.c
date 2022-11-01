@@ -31,7 +31,7 @@ char *_strpbrk(char *s, char *accept)
 
 	}
 
-	if (flag == 0);
+	if (flag == 0)
 	temp_ptr = NULL;
 
 	return (temp_ptr);
