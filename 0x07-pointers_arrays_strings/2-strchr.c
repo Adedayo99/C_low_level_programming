@@ -12,18 +12,22 @@ char *_strchr(char *s, char c)
 {
 	int i;
 	char *ptr = s;
-
+	int flag = 0;
+	char *temp_ptr;
 
 	for (i = 0; ptr[i] != '\0'; i++)
 	{
 		if (ptr[i] == c)
-		ptr = ptr + i - 1;
+		{
+		temp_ptr = &ptr[i];
+		flag = 1;
+		}
 	}
 
-	if (ptr != ptr + i - 1)
-	ptr = NULL;
+	if (flag != 1)
+	temp_ptr = NULL;
 
-	return (ptr);
+	return (temp_ptr);
 	_putchar('\n');
 
 }
