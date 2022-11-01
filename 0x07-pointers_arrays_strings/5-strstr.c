@@ -15,6 +15,7 @@ char *_strstr(char *haystack, char *needle)
 	int i;
 	int j;
 	char *temp_ptr;
+	int flag = 0;
 
 	for (i = 0; ptr[i] != '\0'; i++)
 	{
