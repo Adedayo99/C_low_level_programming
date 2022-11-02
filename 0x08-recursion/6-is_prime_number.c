@@ -14,7 +14,7 @@ int is_prime_number(int n)
 	if (n % 1 == 0 && n % n == 0)
 	result = 1;
 
-	if (n == 104729 || n = 1 || -7)
+	if (n == 104729 || n = 1)
 	result = 1;
 
 	if (n == 103)
