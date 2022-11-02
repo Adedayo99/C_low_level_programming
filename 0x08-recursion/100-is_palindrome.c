@@ -6,7 +6,7 @@
 */
 
 #include "main.h"
-
+int checker(char *s, int len);
 int is_palindrome(char *s)
 {
 	char *ptr = s;
@@ -41,7 +41,7 @@ int _strlen_recursion(char *s)
 }
 
 
-int checker(char *s, len)
+int checker(char *s, int len)
 {
 	char *pt = s;
 	int i;
