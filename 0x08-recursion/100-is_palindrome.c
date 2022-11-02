@@ -47,7 +47,7 @@ int checker(char *s, int len)
 	int i;
 	int result = 1;
 
-	for (i = 0; i < len / 2; i++)
+	for (i = 0; i <= len / 2; i++)
 	{
 	if (pt[i] != pt[len - i])
 	result = 0;
