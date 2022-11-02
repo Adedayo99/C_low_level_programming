@@ -7,14 +7,19 @@
 
 #include "main.h"
 
-void print_rev_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
 	char *ptr = s;
 
 	if (*ptr != '\0')
-	print_rev_recursion(ptr + 1);
+	{
+	_print_rev_recursion(ptr + 1);
 	
 	_putchar(*ptr);
+	}
+
+	if (ptr == s)
+	_putchar('\n');
 } 
 
 	
