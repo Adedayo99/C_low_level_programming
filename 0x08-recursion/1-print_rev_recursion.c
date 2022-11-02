@@ -14,13 +14,12 @@ void _print_rev_recursion(char *s)
 	if (*ptr != '\0')
 	{
 	_print_rev_recursion(ptr + 1);
-	
+
 	_putchar(*ptr);
 	}
 
-	if (ptr == s)
-	_putchar('\n');
-} 
+
+}
 
 	
 
