@@ -31,7 +31,7 @@ char *_strdup(char *str)
 	else
 	for (i = 0; i < len; i++)
 	{
-	if (ptr1[0] == NULL)
+	if (ptr1[0] == '\0')
 	break;
 
 	ptr_arr[i] = ptr1[i];
