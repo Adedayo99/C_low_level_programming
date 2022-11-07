@@ -35,9 +35,10 @@ char *_strdup(char *str)
 	break;
 
 	ptr_arr[i] = ptr1[i];
+	flag = 1;
 	}
 
-	flag = 1;
+
 
 
 	if (flag == 1)
