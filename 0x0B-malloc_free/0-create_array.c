@@ -19,10 +19,12 @@ char *create_array(unsigned int size, char c)
 	ptr = malloc(sizeof(char) * (int) size);
 	ptr[0] = c;
 	flag = 1;
-	return (ptr);
 
 	}
 
-	if (size == 0)
+	if (flag == 1)
+	return (ptr);
+
+	else
 	return (NULL);
 }
