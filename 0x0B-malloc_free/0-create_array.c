@@ -22,11 +22,12 @@ char *create_array(unsigned int size, char c)
 
 	}
 
-	free(ptr);
 
 	if (flag == 1)
 	return (ptr);
 
 	else
 	return (NULL);
+
+	free(ptr);
 }
