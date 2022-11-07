@@ -13,6 +13,7 @@ char *create_array(unsigned int size, char c)
 {
 	char *ptr;
 	int flag = 0;
+	int i;
 
 	if (size > 0)
 	{
@@ -23,7 +24,7 @@ char *create_array(unsigned int size, char c)
 
 	else
 
-	for (int i = 0; i < size; i++)
+	for (i = 0; i < (int) size; i++)
 	ptr[i] = c;
 
 	flag = 1;
