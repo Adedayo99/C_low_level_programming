@@ -1,7 +1,7 @@
 /**
 * create_array - creates array with variable aize
 *@size: num of bytes
-*@c: initial char
+ii*@c: initial char
 *
 *Return: Pointer or NULL
 */
@@ -16,7 +16,12 @@ char *create_array(unsigned int size, char c)
 
 	if (size > 0)
 	{
-	ptr = malloc(sizeof(char) * (int) size);
+	ptr = (char*) malloc(sizeof(char) * (int) size);
+
+	if (ptr == NULL)
+	flag = 0;
+
+	else
 	ptr[0] = c;
 	flag = 1;
 
@@ -29,5 +34,5 @@ char *create_array(unsigned int size, char c)
 	else
 	return (NULL);
 
-	free(ptr);
+
 }
