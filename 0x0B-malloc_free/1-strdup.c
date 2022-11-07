@@ -16,7 +16,7 @@ char *_strdup(char *str)
 	int len = 0;
 	int flag = 0;
 
-	while(ptr1[i] != '\0')
+	while (ptr1[i] != '\0')
 	{
 	len++;
 	i++;
@@ -29,8 +29,11 @@ char *_strdup(char *str)
 	flag = 0;
 
 	else
-	for(i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
 	{
+	if (*ptr1 == NULL)
+	break;
+
 	ptr_arr[i] = ptr1[i];
 	}
 
