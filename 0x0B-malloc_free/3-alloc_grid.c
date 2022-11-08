@@ -5,6 +5,9 @@
 *
 * Return: pointer ti array in heap
 */
+#include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
 
 int **alloc_grid(int width, int height)
 {
@@ -17,7 +20,7 @@ int **alloc_grid(int width, int height)
 	{
 	flag = 1;
 
-	ptr = (int *) malloc(sizeof(int *) * height);
+	ptr = (int **) malloc(sizeof(int *) * height);
 
 	for (i = 0; i < height; i++)
 	ptr[i] = (int *) malloc(sizeof(int) * width);
