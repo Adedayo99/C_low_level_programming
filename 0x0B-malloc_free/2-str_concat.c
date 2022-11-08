@@ -9,6 +9,9 @@
 #include "main.h"
 #include "stdlib.h"
 #include "stddef.h"
+
+int len_check(char *str);
+
 char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
@@ -18,7 +21,7 @@ char *str_concat(char *s1, char *s2)
 	int len, len1, len2;
 	char *ptr_arr;
 
-	if (ptr1 && ptr2 != NULL)
+	if (s1 && s2 != NULL)
 	{
 	flag = 1;
 	len1 = len_check(s1);
