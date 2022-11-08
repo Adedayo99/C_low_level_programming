@@ -7,14 +7,16 @@
 */
 
 #include "main.h"
-
+#include "stdlib.h"
+#include "stddef.h"
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr1 = s1;
 	char *ptr2 = s2;
 	int i = 0;
 	int j;
-	flag = 0;
+	int flag = 0;
+
 	int len;
 	char *ptr_arr;
 
