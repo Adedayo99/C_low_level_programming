@@ -12,8 +12,8 @@ int main(int argc, char *argv[])
 {
 	int i, j;
 
-	i = (int) argv[1];
-	j = (int) argv[2];
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
 
 	if (i || j == NULL)
 	{
