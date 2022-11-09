@@ -1,7 +1,7 @@
 /**
 * main - main function
 *@argc: counter
-*@drgv: list of inputs
+*@argv: list of inputs
 *
 * Return: int
 */
