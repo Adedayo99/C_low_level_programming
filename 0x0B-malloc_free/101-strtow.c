@@ -17,10 +17,10 @@ char **strtow(char *str)
 	char **p;
 	int i, j;
 
-	if (str == NULL || str == "")
+	if (str == NULL || str == " ")
 	return (NULL);
 
-	ptr = string_arange(str);
+	ptr = string_arrange(str);
 
 	**p = (char **) malloc(sizeof(char) * 3);
 
@@ -38,7 +38,7 @@ char **strtow(char *str)
 
 
 
-int string_arrange(char *str)
+char *string_arrange(char *str)
 {
 	int i, len = 0;
 	char *ptr;
