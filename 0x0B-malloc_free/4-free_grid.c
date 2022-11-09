@@ -6,6 +6,9 @@
 * Return: No return val
 */
 
+#include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 void free_grid(int **grid, int height)
 {
 
