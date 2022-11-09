@@ -15,17 +15,17 @@ int len_check(char *str);
 char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
-	int j;
+	int j = 0;
 	int flag = 0;
 
 	int len, len1, len2;
 	char *ptr_arr;
 
 	if (s1 == NULL)
-	s1 = " ";
+	s1 = "";
 
 	if (s2 == NULL)
-	s2 = " ";
+	s2 = "";
 
 	if (s1 && s2 != NULL)
 	{
@@ -35,13 +35,17 @@ char *str_concat(char *s1, char *s2)
 
 	len = len1 + len2 + 1;
 	ptr_arr = (char *) malloc(sizeof(char) * len);
+	if (ptr_arr == NULL)
+	flag = 0;
 
 	for (i = 0; i < len1; i++)
 	ptr_arr[i] = s1[i];
 
-	for (i = len1, j = 0; i < len - 3 && s2[j] != '\0'; i++, j++)
+	while (s2[j] != '\0')
+	{
 	ptr_arr[i] = s2[j];
-
+	i++;,j++;
+	}
 	ptr_arr[i] = '\0';
 	}
 
@@ -62,8 +66,6 @@ int len_check(char *str)
 
 	for (len = 0; str[len] != '\0'; len++)
 	;
-
-	len += 1;
 
 	return (len);
 }
