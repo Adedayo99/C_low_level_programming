@@ -8,7 +8,7 @@
 #include "main.h"
 #include <stddef.h>
 #include <stdlib.h>
-int string_arrange(char *str);
+char *string_arrange(char *str);
 
 char **strtow(char *str)
 {
