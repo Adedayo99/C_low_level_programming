@@ -44,7 +44,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j] != '\0')
 	{
 	ptr_arr[i] = s2[j];
-	i++;,j++;
+	i++, j++;
 	}
 	ptr_arr[i] = '\0';
 	}
