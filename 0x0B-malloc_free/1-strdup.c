@@ -16,8 +16,8 @@ char *_strdup(char *str)
 	int len = 0;
 	int flag = 0;
 
-
-
+	if (str != NULL)
+{
 	while (ptr1[i] != '\0')
 	{
 	len++;
@@ -38,7 +38,7 @@ char *_strdup(char *str)
 	}
 
 
-
+}
 
 	if (flag == 1)
 	return (ptr_arr);
