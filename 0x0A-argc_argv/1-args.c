@@ -12,11 +12,12 @@
 int main(int argc, char *argv[])
 {
 	int flag = 0;
+	char *c;
 
 	printf("%d\n", argc);
 
-	if (flag == 0)
-	return (argv[0]);
+	if (flag == 1)
+	c =  (argv[0]);
 
 	else
 	return (0);
