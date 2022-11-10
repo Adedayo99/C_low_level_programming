@@ -12,7 +12,6 @@
 int main(int argc, char *argv[])
 {
 	int val;
-	int result;
 
 	if (argc != 2)
 	{
