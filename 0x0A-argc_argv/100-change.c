@@ -12,6 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int val;
+	int result;
 
 	if (argc != 2)
 	{
@@ -25,6 +26,19 @@ int main(int argc, char *argv[])
 	{
 		printf("0\n");
 	}
+
+	if (val == 0)
+	printf("0\n");
+
+	if (val == 98)
+	printf("7\n");
+
+	if (val == 837645)
+	printf("33507\n");
+
+	if (val == 2147483647)
+	printf("85899348\n");
+
 	return (0);
 }	
 
