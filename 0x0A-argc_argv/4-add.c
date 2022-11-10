@@ -10,6 +10,8 @@
 
 int main(int argc, char *argv[])
 {
+	int i, j, sum;
+
 	if (argc == 1)
 	printf("0\n");
 
