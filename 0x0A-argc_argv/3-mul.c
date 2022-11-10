@@ -8,12 +8,12 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-#include <stddef.h>
+#include "main.h"
+
 int main(int argc, char *argv[])
 {
 
-	(void) argc;
-	if (argv[1] || argv[2] == NULL)
+	if (argc > 3 || argc < 3)
 	{
 	printf("Error\n");
 	return (1);
