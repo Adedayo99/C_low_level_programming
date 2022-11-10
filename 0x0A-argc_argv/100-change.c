@@ -11,6 +11,7 @@
 
 int main(int argc, char *argv[])
 {
+	int val;
 
 	if (argc != 2)
 	{
@@ -18,8 +19,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
+	val = atoi(argv[1]);
 
-	if (atoi(*argv[1]) < 0)
+	if (val < 0)
 	{
 		printf("0\n");
 	}
