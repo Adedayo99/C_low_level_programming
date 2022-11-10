@@ -11,15 +11,12 @@
 #include <stdlib.h>
 int main(int argc, char *argv[])
 {
-	int flag = 0;
-	char *c;
+
+	char *c = argv[0];
 
 	printf("%d\n", argc);
 
-	if (flag == 1)
-	c =  (argv[0]);
 
-	else
 	return (0);
 
 
