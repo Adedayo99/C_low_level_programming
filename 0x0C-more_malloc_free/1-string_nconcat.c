@@ -1,4 +1,4 @@
-/**
+i/**
 * string_nconcat - concatenates strings
 *@s1: first string
 *@s2: second string
@@ -20,6 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	while (s1[i] != '\0')
 	i++, len++;
+	i = 0;
 
 	while (s2[j] != '\0')
 	j++, len2++;
@@ -30,15 +31,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (ptr == NULL)
 	return (NULL);
 
+	if (s1 != NULL || s[i] != "")
+	{
 	for (i = 0; s1[i] != '\0'; i++)
 	ptr[i] = s1[i];
+	}
 
 	if ((int) n >= len2)
 	n = len2;
 
+	if (s2 != NULL || s2[j] != "")
+	{
 	for (i = i, j = 0; j < (int) n; j++, i++)
 	ptr[i] = s2[j];
-
+	flag = 1;
+	}
+	if (flag == 1)
 	ptr[i] = '\0';
 
 	return (ptr);
