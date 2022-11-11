@@ -28,12 +28,22 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (new_size == old_size)
 	return (NULL);
 
+	if (old_size < new_size)
+{
 	while (i < (int) old_size)
 	{
 	mptr[i] = *((char *) ptr);
 	i++;
 	ptr = ((char *) ptr) + i;
 
+	}
+}
+
+	else 
+	while ( i < (int) new_size)
+	{
+	mptr[i] = *((char *) ptr);
+	i++, ptr = ((char *) ptr) + i;
 	}
 	free(ptr);
 
