@@ -5,6 +5,9 @@
 *
 * Return: pointer to array
 */
+#include <stdlib.h>
+#include "main.h"
+#include <stddef.h>
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
