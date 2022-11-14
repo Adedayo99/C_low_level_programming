@@ -8,7 +8,7 @@
 *@owner: owner ppt
 */
 
-struct dog 
+struct dog
 {
 	char *name;
 	float age;
