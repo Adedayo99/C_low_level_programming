@@ -22,12 +22,14 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 		if (result != 0)
 		{
-		flag = 1;
-		return (i);
+		flag = i;
 		}
 	}
 
-	if (flag == 0)
-	return (-1);
+	if (flag != 0)
+	return (flag);
 
+
+	else
+	return (-1);
 }
