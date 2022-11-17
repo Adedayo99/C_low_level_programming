@@ -4,10 +4,12 @@
 *
 * Return: sum
 */
+#include <stdargs.h>
 
 int sum_them_all(const unsigned int n, ...)
 {
-	int i, j, sum;
+	int i, j;
+	int sum = 0;
 	va_list args;
 
 	if (n == 0)
