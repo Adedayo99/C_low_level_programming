@@ -6,7 +6,7 @@
 * Return: no returrn val
 */
 #include <stdarg.h>
-
+#include <stdio.h>
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 
