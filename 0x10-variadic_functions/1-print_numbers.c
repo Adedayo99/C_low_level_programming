@@ -7,6 +7,8 @@
 */
 #include <stdarg.h>
 #include <stdio.h>
+#include <stddef.h>
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 
@@ -14,10 +16,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_list args;
 
-	va_start(args, n)
+	va_start(args, n);
 
 
-	if (*separator == NULL)
+	if (separator == NULL)
 	{
 		for (i = 0; i < (int) n; i++)
 		{
@@ -31,7 +33,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		for (i = 0; i < (int) n; i++)
 		{
 		num = va_arg(args, int);
-		printf("%d%c ", num, *separator);
+		printf("%d", num);
+
+		if (i < (int) (n - 1))
+		printf("%c ", *separator);
 		}
 	}
 
