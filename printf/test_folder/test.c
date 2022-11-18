@@ -8,7 +8,7 @@ int main(void)
 	char *pt = "myname is";
 	int result;
 
-	result = _printf("cs%", s, pt);
+	result = _printf("%c%s%", s, pt);
 	printf("%d", result);
 	return (0);
 
