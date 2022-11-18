@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 			flag += 1;
 		}
 
-		if (format[i] == '%')
+		if (format[i] == '%' && format[i + 1] == '%')
 		{
 
 			write(1, "%", 1);
