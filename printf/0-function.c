@@ -33,8 +33,8 @@ int _printf(const char *format, ...)
 
 		if (format[i] == '%')
 		{
-			x = va_arg(args, int);
-			write(1, &x, 1);
+
+			write(1, "%", 1);
 			flag += 1;
 		}
 
@@ -43,10 +43,13 @@ int _printf(const char *format, ...)
 			xx = va_arg(args, char *);
 			j = 0;
 			while (xx[j] != '\0')
-			slen++, j++;
-
-			write(1, &xx, slen);
+			{
+				slen++;
+				write(1, &xx[j], slen);
+				j++;
+			}
 			flag += slen;
+			
 		}
 
 	}
