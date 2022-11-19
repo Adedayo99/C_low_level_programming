@@ -10,7 +10,7 @@ int printf_1(char *c);
 int printf_2(char *c);
 
 
-int _printf(const char *format)
+int _printf(const char *format,...)
 {
 	int x;
 	int i, len = 0;
