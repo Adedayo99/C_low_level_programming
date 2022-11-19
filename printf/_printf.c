@@ -7,12 +7,12 @@
 #include <stdarg.h>
 #include <unistd.h>
 int printf_1(char *c);
-int printf_2(char *c);
+int printf_2(const char *c);
 int format_checker(const char *p, int len);
 
 int _printf(const char *format,...)
 {
-	int x;
+	int x, k;
 	int i, len = 0;
 	char  *ch;
 	int return_val;
