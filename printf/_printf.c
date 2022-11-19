@@ -28,7 +28,7 @@ int _printf(const char *format)
 		if (format[i] == '%' && format[i + 1] == 'c')
 		{
 			x = va_arg(args, int);
-			return_val +=  printf_1(&x);
+			return_val +=  printf_1((char *) &x);
 		}
 
 		if (format[i] == '%' && format[i + 1] == '%')
@@ -39,7 +39,7 @@ int _printf(const char *format)
 		if (format[i] == '%' && format[i + 1] == 's')
 		{
 			ch = va_arg(args, char *);
-			return_val +=  printf_2(char *);
+			return_val +=  printf_2(ch);
 		}
 
 
