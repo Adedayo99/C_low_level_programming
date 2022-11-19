@@ -8,7 +8,7 @@
 #include <unistd.h>
 int printf_1(char *c);
 int printf_2(char *c);
-
+int format_checker(const char *p, int len);
 
 int _printf(const char *format,...)
 {
@@ -22,7 +22,18 @@ int _printf(const char *format,...)
 
 	while (format[i] != '\0')
 	len++, i++;
-  
+
+	if (len > 0)
+	k =  format_checker(format, len);
+	
+ 
+	if (k == 0)
+	{
+		for(i = 0; format[i] != '\0'; i++)
+		return_val =  printf_2(&format[i]);
+	}	  
+
+
 	for (i = 0; i < len; i++) 
 	{
 		if (format[i] == '%' && format[i + 1] == 'c')
@@ -64,7 +75,7 @@ int printf_1(char *c)
 	int flag = 0;
 	write(1, c, 1);
 
-	return (flag += 1);	
+	return (flag += 1);
 }
 
 
@@ -75,23 +86,34 @@ int printf_1(char *c)
 * Return: int val
 */
 
-int printf_2(char *c)
+int printf_2(const char *c)
 {
 	int flag = 0;
-	int i;
-	int len = 0;
-  
- 	while (c[i] != '\0')
-	len++, i++;
-  
-  
-	for (i = 0; i < len; i++)
-	{
-		write(1, &c[i], 1);
-		flag++;
-	}
+	write(1, c, 1);
+	flag++;
   
 	return(flag);
 }
 
+/** 
+* format_checker - checks if formatted printing is the goal
+*@format: format specifier
+*@len: length of format specifier
+*
+* Return: int val
+*/
 
+int format_checker(const char *p, int len)
+{
+	int i;
+	int flag = 0;
+    
+ 	for (i = 0; i < len; i++)
+	{
+		if (p[i] == '%')
+		flag = 1;
+		return(flag);
+	}
+    
+	return (flag);
+}
