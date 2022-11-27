@@ -9,11 +9,14 @@
 
 
 
-size_t print_list(const list_t *h);
+size_t print_list(const list_t *h)
 {
 	int count = 0;
 
 	list_t *ptr = h;
+
+	if (ptr === NULL)
+	return (NULL);
 
 	while (ptr != NULL)
 	{
