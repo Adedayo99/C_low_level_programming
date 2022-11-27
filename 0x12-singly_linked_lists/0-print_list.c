@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 {
 	int count = 0;
 
-	list_t *ptr = h;
+	const list_t *ptr = h;
 
 	if (ptr == NULL)
 	return (0);
@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 
 		count++;
 		if ((*ptr).str != NULL)
-		printf("[%lu] %s", (*ptr).len, (*ptr).str);
+		printf("[%u] %s", (*ptr).len, (*ptr).str);
 
 		else
 		printf("[0] (nil)");
