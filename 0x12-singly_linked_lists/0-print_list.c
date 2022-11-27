@@ -5,7 +5,7 @@
 * Return: thr number of nodes
 */
 #include <stdio.h>
-
+#include "lists.h"
 
 
 
@@ -15,7 +15,7 @@ size_t print_list(const list_t *h)
 
 	list_t *ptr = h;
 
-	if (ptr === NULL)
+	if (ptr == NULL)
 	return (NULL);
 
 	while (ptr != NULL)
