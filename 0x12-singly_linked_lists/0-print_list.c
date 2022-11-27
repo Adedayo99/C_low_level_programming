@@ -5,7 +5,7 @@
 * Return: thr number of nodes
 */
 #include <stdio.h>
-#include "lists.h"
+
 
 
 
