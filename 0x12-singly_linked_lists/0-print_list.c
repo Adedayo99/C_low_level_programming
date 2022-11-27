@@ -26,10 +26,10 @@ size_t print_list(const list_t *h)
 		printf("[%u] %s\n", (*ptr).len, (*ptr).str);
 
 		else
-		printf("[0] (nil)");
+		printf("[0] (nil)\n");
 
 		ptr = (*ptr).next;
 	}
 
-	return ((long unsigned) count);
+	return ((unsigned) count);
 }
