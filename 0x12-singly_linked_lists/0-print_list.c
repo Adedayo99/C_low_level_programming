@@ -11,7 +11,7 @@
 
 size_t print_list(const list_t *h);
 {
-	int i = 0;
+	int count = 0;
 
 	list_t *ptr = h;
 
@@ -28,5 +28,5 @@ size_t print_list(const list_t *h);
 		ptr = (*ptr).next;
 	}
 
-	return (count);
+	return ((long unsigned) count);
 }
