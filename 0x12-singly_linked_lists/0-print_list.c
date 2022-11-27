@@ -31,5 +31,5 @@ size_t print_list(const list_t *h)
 		ptr = (*ptr).next;
 	}
 
-	return ((unsigned) count);
+	return ((unsigned int) count);
 }
