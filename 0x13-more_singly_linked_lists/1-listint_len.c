@@ -4,6 +4,8 @@
 *
 * Return: size_t value
 */
+#include "lists.h"
+#include <stdlib.h>
 
 size_t listint_len(const listint_t *h)
 {
