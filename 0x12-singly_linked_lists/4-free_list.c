@@ -1,5 +1,5 @@
 /**
-* free-list - frees memory used for list_t
+* free_list - frees memory used for list_t
 *@head: pointer to list
 *
 * Return: void
@@ -11,13 +11,11 @@ void free_list(list_t *head)
 {
 	list_t *temp = head;
 
-	while (1)
+	while (temp != NULL)
 	{
-		temp = (*temp).next;
+		temp = temp->next;
 		free(head);
-		head = temp; 
-		if (head == NULL)
-		break;		
+		head = temp;	
 	}
 
 }
