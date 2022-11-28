@@ -5,7 +5,7 @@
 *
 * Return: pointer to nre beginning of linked list
 */
-#include<lists.h>
+#include "lists.h"
 #include <string.h>
 #include <stdlib.h>
 
