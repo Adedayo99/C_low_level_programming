@@ -13,6 +13,7 @@ void print_before_main(void)
 
 }
 
-int main()
+int main(void)
 {
+	return (0);
 }
