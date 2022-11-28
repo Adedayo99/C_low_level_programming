@@ -32,9 +32,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		ptr = *head;
 		while (1)
 		{
-			ptr = ptr->next;
 			if (ptr->next == NULL)
 			break;
+			ptr = ptr->next;
 		}
 
 		new = malloc(sizeof(list_t));
