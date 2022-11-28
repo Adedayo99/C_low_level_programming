@@ -13,7 +13,3 @@ void print_before(void)
 
 }
 
-int main(void)
-{
-	return (0);
-}
