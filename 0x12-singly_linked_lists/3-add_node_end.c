@@ -13,18 +13,27 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 
 	list_t *ptr;
+	list_t *temp = *head;
 
 	ptr = malloc(sizeof(list_t));
+	if (ptr == NULL)
+	return ((list_t *) NULL);
+
+
 	(*ptr).str = strdup(str);
 	(*ptr).len = strlen(str);
 	(*ptr).next = NULL;
 
-	while ((*head).next != NULL)
-	*head = (*head).next;
+	while ((**temp).next != NULL)
+	*temp = (**temp).next;
 
-	(*head).next = ptr;
+	(**temp).next = ptr;
 
-	return (ptr);
+	if ((**temp).next == NULL)
+	return (NULL);
+
+	else
+	return ((**temp).next);
 }
 
 
