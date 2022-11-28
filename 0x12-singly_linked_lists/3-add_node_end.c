@@ -17,12 +17,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	ptr = malloc(sizeof(list_t));
 	(*ptr).str = strdup(str);
 	(*ptr).len = strlen(str);
-	
+	(*ptr).next = NULL;
+
 	while ((**head).next != NULL)
 	*head = (**head).next;
 
 	(**head).next = ptr;
-	(*ptr).next = NULL;
 
 	return (ptr);
 }
