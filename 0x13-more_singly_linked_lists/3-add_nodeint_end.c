@@ -34,14 +34,14 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return ((listint_t *) NULL);
 
 		(*ptr).n = n;
+		(*ptr).next = NULL;
 
 		temp = *head;
 
-		while (temp->next != NULL)
+		while (temp->next)
 		temp = temp->next;
 
 		temp->next = ptr;
-		ptr->next = NULL;
 
 	}
 
