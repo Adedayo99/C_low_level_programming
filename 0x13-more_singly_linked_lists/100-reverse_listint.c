@@ -14,10 +14,10 @@ listint_t *reverse_listint(listint_t **head)
 	while (*head != NULL)
 	{
 		ahead = (*head)->next;
-		(*head)->link = update;
+		(*head)->next = update;
 		update = *head;
 		*head = ahead;
 	}
 
-	return (head);
+	return (*head);
 }
