@@ -5,10 +5,11 @@
 * Return: num of nodes in list
 */
 #include "lists.h"
+#include <stdio.h>
 
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *temp;
+	const listint_t *temp;
 	int count = 0;
 
 	if (head == NULL)
@@ -18,7 +19,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	while (temp != NULL)
 	{
-		printf("[%p] %u", temp->next, temp->n);
+		printf("[%p] %u\n", (void *)temp, temp->n);
 		temp = temp->next;
 
 		count++;
