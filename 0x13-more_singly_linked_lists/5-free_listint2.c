@@ -1,5 +1,5 @@
 /**
-* free_list2 - frees linked list and assigns head as NULL
+* free_listint2 - frees linked list and assigns head as NULL
 *@head: pointer to head pointer of list
 *
 * Return: void
