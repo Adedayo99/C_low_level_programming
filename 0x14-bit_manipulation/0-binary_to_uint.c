@@ -6,6 +6,7 @@
 */
 #include "main.h"
 #include <stdlib.h>
+#include <math.h>
 
 unsigned int binary_to_uint(const char *b)
 {
@@ -18,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; b[i] != '\0'; i++)
 	{
-		var += atoi(b[i]) * (2 ** i);
+		var += atoi(&b[i]) * (pow(2, i));
 	}
 
 	return (var);
