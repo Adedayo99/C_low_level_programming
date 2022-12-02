@@ -11,7 +11,6 @@ unsigned int binary_to_uint(const char *b)
 {
 
 	int i;
-	int j;
 	unsigned int var = 0;
 	int expo = 1;
 
