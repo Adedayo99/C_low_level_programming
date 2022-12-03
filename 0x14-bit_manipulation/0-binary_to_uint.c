@@ -10,23 +10,23 @@
 unsigned int binary_to_uint(const char *b)
 {
 
-	int i, j;
+	int i;
 	int  var = 0;
-	int expo = 1;
 
-	if (b == NULL || !b)
-	return (0);
-
-	for (j = 0; b[j] != '\0'; j++)
-
-	for (i = j; i >= 0; i--)
+	while (b[i] != '\0')
 	{
-		if (b[i] == '0' || b[i] == '1')
-		{
-			var += ((int) b[i] * expo); 
-			expo = expo * 2;
-		}
+		if (b[i] == '1')
+		var = (var << 1) | 1;
+
+		if (b[i] == '0')
+		var = (var << 1);
+
+		else
+		return (0);
+
+		i++
 	}
+	
 
 	return ((unsigned int) var);
 
