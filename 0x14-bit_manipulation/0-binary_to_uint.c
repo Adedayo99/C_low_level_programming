@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[i] == '1')
 		var = (var << 1) | 1;
 
-		if (b[i] == '0')
+		else if (b[i] == '0')
 		var = (var << 1);
 
 		else
